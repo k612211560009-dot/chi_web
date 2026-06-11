@@ -1,0 +1,13 @@
+name: GitHub Actions Warning Fix
+
+on: [push]
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  check-code:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Da fix xong canh bao Node.js"
