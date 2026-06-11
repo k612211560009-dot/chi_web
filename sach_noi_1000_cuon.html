@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sach Nói AI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="hero">
+        <div class="hero-title">📚 Sách Nói AI</div>
+        <div class="hero-sub">
+          1.000 cuốn sách • Giọng đọc nhẹ nhàng • Miễn phí
+        </div>
+        <div class="search-bar">
+          <i class="ti ti-search" aria-hidden="true"></i>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Tìm tên sách, tác giả..."
+          />
+        </div>
+        <div class="stats-row">
+          <div class="stat">
+            <div class="stat-n">1.000</div>
+            <div class="stat-l">Cuốn sách</div>
+          </div>
+          <div class="stat">
+            <div class="stat-n">24</div>
+            <div class="stat-l">Thể loại</div>
+          </div>
+          <div class="stat">
+            <div class="stat-n">4</div>
+            <div class="stat-l">Độ tuổi</div>
+          </div>
+          <div class="stat">
+            <div class="stat-n">AI</div>
+            <div class="stat-l">Giọng đọc</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="genres-bar" id="genresBar"></div>
+
+      <div class="books-section">
+        <div class="section-header">
+          <span class="section-title" id="sectionTitle">Tất cả sách</span>
+          <span class="count-badge" id="countBadge">1000 cuốn</span>
+        </div>
+        <div class="books-grid" id="booksGrid"></div>
+        <div class="pagination" id="pagination"></div>
+      </div>
+
+      <div class="player" id="player">
+        <div class="player-empty" id="playerEmpty">
+          <i
+            class="ti ti-headphones"
+            aria-hidden="true"
+            style="font-size: 16px; vertical-align: -2px; margin-right: 4px"
+          ></i>
+          Chọn một cuốn sách để bắt đầu nghe
+        </div>
+        <div
+          class="player-content"
+          id="playerContent"
+          style="display: none"
+        ></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
